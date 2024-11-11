@@ -1,1 +1,3 @@
-# diy-podcast-feed
+# so: you want to host a podcast feed...
+
+hosting a podcast feed is really simple but has a lot of hidden complexities: especially for someone that doesn't have experience hosting things on the internet. hopefully, this repository and README will guide someone with minimal technical experience to host their own feed.
