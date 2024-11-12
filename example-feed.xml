@@ -32,8 +32,8 @@
     <podcast:locked>no</podcast:locked>
     <item>
       <title><![CDATA[ep 1: example audio]]></title>
-      <link><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></link>
-      <guid isPermaLink="true"><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></guid>
+      <link><![CDATA[https://drive.usercontent.google.com/download?id=1MmsEAOJFLoXu8Fvqc5FQCci6OZfQCcDd&export=download&authuser=0&confirm=t&uuid=e6b430b0-5d02-4edf-9f5e-c30028211084&at=AENtkXamrWNYYOG1XcESkkQR2y4u:1731381116668]]></link>
+      <guid isPermaLink="true"><![CDATA[https://drive.usercontent.google.com/download?id=1MmsEAOJFLoXu8Fvqc5FQCci6OZfQCcDd&export=download&authuser=0&confirm=t&uuid=e6b430b0-5d02-4edf-9f5e-c30028211084&at=AENtkXamrWNYYOG1XcESkkQR2y4u:1731381116668]]></guid>
       <description><![CDATA[<p>here's some example audio in a podcast feed!</p>]]></description>
       <pubDate>Mon, 11 Nov 2024 15:58:04 GMT</pubDate>
       <itunes:duration>0</itunes:duration>
@@ -41,7 +41,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episode>1</itunes:episode>
       <itunes:episodeType>trailer</itunes:episodeType>
-      <enclosure url="https://github.com/anna-murphy/diy-podcast-feed" length="0" type="audio/mpeg"/>
+      <enclosure url="https://drive.usercontent.google.com/download?id=1MmsEAOJFLoXu8Fvqc5FQCci6OZfQCcDd&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=e6b430b0-5d02-4edf-9f5e-c30028211084&amp;at=AENtkXamrWNYYOG1XcESkkQR2y4u:1731381116668" length="0" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>

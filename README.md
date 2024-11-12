@@ -102,3 +102,53 @@ for this repository, github gave me this url: `https://anna-murphy.github.io/diy
 if you uploaded an image file to your repository, you should be able to access it in the same way (my `cover-image.jpg` is accessible at https://anna-murphy.github.io/diy-podcast-feed/cover-image.jpg).
 
 with these two links in hand, go back to your xml file and set the links to the feed and your cover image appropriately. 
+
+### but what about the audio? doesn't github only let you upload 25mb files?
+
+thanks for asking! unfortunately, github doesn't let you upload files greater than 25mb. and, depending on the length of your episodes, that just won't cut it. but! that's okay! our current internet enconomy, however questionably, gives a surprising about of free online storage. so, this next section will walk you through uploading an audio file to google drive that can be added to a podcast feed.
+
+so, first step: record your audio! i won't get into how to do that because it depends on what you're trying to do. so i'll just assume you have that. for the purposes of this guide, i'll be using a quick rendition i did of motzart's piano sonata no1 in c major.
+
+for most podcast length audio, you won't be able to upload it to github, so don't try and include it in the repository like i have. instead, head over to google drive! i'll assume you already have a google account (such is life in the 21st century), but if you don't, go ahead and create one really quickly. 
+
+![a screen cap of an empty folder in google drive](/images/07_google_drive.png)
+
+i've gone ahead and created a new folder, but you can upload this where ever you want in your google drive. but just drag your audio file in! depending on the size your your audio file, it might take a few minutes.
+
+![google drive screencap with the uploaded file](/images/08_uploaded_file.png)
+
+then, edit the sharing permission so that anyone with the link can view the file:
+
+![google drive screencap with the uploaded file](/images/09_sharing_permissions.png)
+
+![allow viewing for anyone with the link](/images/10_anyone_with_link.png)
+
+copy the sharing link for your file!
+
+![copy the sharing link](/images/11_copy_link.png)
+
+this is the google drive *sharing* link, and not the link to your file. if you tried to use this link in your podcast feed, it would fail to properly download the audio unfortunately. but! we can get around this.
+
+open the sharing link in a new tab. you should see a google drive player window pop up that looks something like this:
+
+![google drive audio player](/images/12_open_link.png)
+
+then, you'll have to "open the developer tools" or "inspect element" -- the name of this will change from browser to browser, and operating system to operating system. on firefox, i can open the hamburger menu in the top right corner of the window, click "more tools" and then click "web developer tools" (or just press `option + command + I` because i'm using an apple computer), but you might have to quickly look up how to open the developer tools on your browser / os combo. however you open it, you should see a window link this:
+
+![a screenshot of the dreaded inspector window](/images/13_dev_tools.png)
+
+there's a lot going on here, but you can ignore most of it. there's a "network" tab on the top row of this window. click it!
+
+![a screenshot of the network tab in the inspector window](/images/14_network_tab.png)
+
+this window shows all the network requests your browser is making while on a webpage. right now, there shouldn't be very many (if you need to clear it, you should be able to refresh your page). but, the player won't actually fetch the file until you press play in the browser window. without closing the inspector tab, press play. 
+
+![a screenshot of the network tab in the inspector window](/images/15_press_play.png)
+
+a new line should have appeared (though, it might have taken a moment)! the `type` of the requested data should be `mpeg`, or something like it, if your browser gives file type information. though, the size of the file should also match the file you uploaded. once you've identified the correct row in the table, right click on it, and copy the url.
+
+![a screenshot of the network tab in the inspector window](/images/16_copy_url.png)
+
+this is the download url for the audio file. go back and put this in your xml file. but! before you can call this episode uploaded, you'll probably have to edit the url slightly in the `<enclosure>` tag. google's download url's contain a bunch of `&` characters in them, which will break the xml format. take a look through your url and repalce all the `&` with `&amp;`. you should only need to do this in the `<enclosure>` tag.
+
+once that's done, you can save your xml file, github will rebuild the site, and you officially have a podcast feed! :tada:
