@@ -107,6 +107,8 @@ with these two links in hand, go back to your xml file and set the links to the 
 
 thanks for asking! unfortunately, github doesn't let you upload files greater than 25mb. and, depending on the length of your episodes, that just won't cut it. but! that's okay! our current internet enconomy, however questionably, gives a surprising about of free online storage. so, this next section will walk you through uploading an audio file to google drive that can be added to a podcast feed.
 
+> note: this method might play weirdly with some podcatchers. some more research needs to happen before i can say for certain, but i think it should work?
+
 so, first step: record your audio! i won't get into how to do that because it depends on what you're trying to do. so i'll just assume you have that. for the purposes of this guide, i'll be using a quick rendition i did of motzart's piano sonata no1 in c major.
 
 for most podcast length audio, you won't be able to upload it to github, so don't try and include it in the repository like i have. instead, head over to google drive! i'll assume you already have a google account (such is life in the 21st century), but if you don't, go ahead and create one really quickly. 
@@ -152,3 +154,14 @@ a new line should have appeared (though, it might have taken a moment)! the `typ
 this is the download url for the audio file. go back and put this in your xml file. but! before you can call this episode uploaded, you'll probably have to edit the url slightly in the `<enclosure>` tag. google's download url's contain a bunch of `&` characters in them, which will break the xml format. take a look through your url and repalce all the `&` with `&amp;`. you should only need to do this in the `<enclosure>` tag.
 
 once that's done, you can save your xml file, github will rebuild the site, and you officially have a podcast feed! :tada:
+
+## okay, i should double check my work before i share my podcast with my friends, right?
+
+yep! and lucky for you there's a few good resources online to help you do that!
+
+- [Podbase's Feed Validator](https://podba.se/validate/). This takes a look at your feed and tells you if there are any errors in it.
+- [Rss Viewer](https://rssviewer.app/). This will let you look at the list of episodes in your feed in a visual way.
+
+## now, how do i add new episodes to my feed?
+
+> great question, i haven't written this yet :sob:
