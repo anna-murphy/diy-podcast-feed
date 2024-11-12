@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss
+  version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <channel>
+    <title><![CDATA[diy-podcast-example-feed]]></title>
+    <description><![CDATA[an example feed for hosting a podcast using github pages and google drive.]]></description>
+    <link><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></link>
+    <language>en-us</language>
+    <itunes:author>anna murphy</itunes:author>
+    <itunes:summary><![CDATA[an example feed for hosting a podcast using github pages and google drive.]]></itunes:summary>
+    <itunes:image href="cover-image.jpg"/>
+    <itunes:category text="Education">
+      <itunes:category text="How To"/>
+    </itunes:category>
+    <itunes:owner>
+      <itunes:name>anna murphy</itunes:name>
+      <itunes:email>curunilauro@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>true</itunes:explicit>
+    <itunes:type>serial</itunes:type>
+    <itunes:new-feed-url><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></itunes:new-feed-url>
+    <atom:link href="https://github.com/anna-murphy/diy-podcast-feed" rel="self" type="application/rss+xml"/>
+    <docs><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></docs>
+    <podcast:locked>no</podcast:locked>
+    <item>
+      <title><![CDATA[ep 1: example audio]]></title>
+      <link><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></link>
+      <guid isPermaLink="true"><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></guid>
+      <description><![CDATA[<p>here's some example audio in a podcast feed!</p>]]></description>
+      <pubDate>Mon, 11 Nov 2024 15:58:04 GMT</pubDate>
+      <itunes:duration>0</itunes:duration>
+      <itunes:explicit>fakse</itunes:explicit>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>trailer</itunes:episodeType>
+      <enclosure url="https://github.com/anna-murphy/diy-podcast-feed" length="0" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>
