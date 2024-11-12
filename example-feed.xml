@@ -12,11 +12,11 @@
   <channel>
     <title><![CDATA[diy-podcast-example-feed]]></title>
     <description><![CDATA[an example feed for hosting a podcast using github pages and google drive.]]></description>
-    <link><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></link>
+    <link><![CDATA[https://anna-murphy.github.io/diy-podcast-feed/example-feed.xml]]></link>
     <language>en-us</language>
     <itunes:author>anna murphy</itunes:author>
     <itunes:summary><![CDATA[an example feed for hosting a podcast using github pages and google drive.]]></itunes:summary>
-    <itunes:image href="cover-image.jpg"/>
+    <itunes:image href="https://anna-murphy.github.io/diy-podcast-feed/cover-image.jpg"/>
     <itunes:category text="Education">
       <itunes:category text="How To"/>
     </itunes:category>
@@ -26,8 +26,8 @@
     </itunes:owner>
     <itunes:explicit>true</itunes:explicit>
     <itunes:type>serial</itunes:type>
-    <itunes:new-feed-url><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></itunes:new-feed-url>
-    <atom:link href="https://github.com/anna-murphy/diy-podcast-feed" rel="self" type="application/rss+xml"/>
+    <itunes:new-feed-url><![CDATA[https://anna-murphy.github.io/diy-podcast-feed/example-feed.xml]]></itunes:new-feed-url>
+    <atom:link href="https://anna-murphy.github.io/diy-podcast-feed/example-feed.xml" rel="self" type="application/rss+xml"/>
     <docs><![CDATA[https://github.com/anna-murphy/diy-podcast-feed]]></docs>
     <podcast:locked>no</podcast:locked>
     <item>

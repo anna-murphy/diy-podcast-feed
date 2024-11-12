@@ -2,6 +2,8 @@
 
 hosting a podcast feed is really simple but has a lot of hidden complexities: especially for someone that doesn't have experience hosting things on the internet. hopefully, this repository and README will guide someone with minimal technical experience to host their own feed.
 
+to see the fully hosted rss feed, [click here](https://anna-murphy.github.io/diy-podcast-feed/example-feed.xml)!
+
 ## technical basics: what actually *is* a podcast feed?
 
 at its core, a podcast feed is a text file that contains links to a series of audio files (with a sprinkling of metadata). but, to make sure that all podcatchers can read the same feeds, they have to be formatted in a certain way: [XML](https://en.wikipedia.org/wiki/XML).
@@ -63,3 +65,40 @@ well, the actual xml file is just a text file. to actually have these show up in
 ### hosting an xml file on github
 
 the first thing you're going to need to do is create your xml file. given the information above and the example file (link), update the file to contain information about your podcast.
+
+then, make a github account and create a repository for this file. a repository is just a place to store code in an organized manner. for the purposes of this project, you shouldn't need to worry the complexities of github too much. 
+
+> note: add more information aout this step eventually
+
+once you have the repository create, you'll upload your xml file. navigate to the repository's page, click "Add File" and "Upload Files".
+
+![a screenshot of the github UI showing the "add file" and "upload files" buttons](/images/00_upload_file.png)
+
+if you have cover art for your podcast, you can upload it here as well.
+
+then, set up github pages to host these files. from the repository page, navigate to the settings page.
+
+![a screenshot of the github ui with the settings link highlighted](/images/01_github-main.png)
+
+then, click "pages" on the left side of the window.
+
+![a screenshot of the github repository settings page with the pages link highlighted](/images/02_github-settings-highlight-pages.png)
+
+then, where the dropdown says "none" under the "branch" heading, change the branch to "main".
+
+![the github pages settings page with the branch select dropdown highlighted](/images/03_github-settings-select-branch.png)
+![the same page with the correct option highlighted](/images/04_github-pages-select-main.png)
+
+this is cause github to create a website based on the contents of your repository. in other circumstances, you might want to have your code in one "branch" of the repository and the website in another. but for our purposes, we're going to only worry about one branch to make everything a little simpler.
+
+give github a few minutes to build the page, and then you can navigate back to the "pages" settings in your repository. you should see a banner like this that will link you to a website:
+
+![the github repo settings page with the deployed pages banner](/images/05_github_pages_deployed.png)
+
+this banner will contain a link to the website that was created. click the link to go to that page. if you uploaded a `README.md` file, you should see it on this page. if not, it will (probably?) be blank. manually change the url in the search bar of your browser, and add the file name of the xml file you uploaded. this will be the url for your podcast feed. 
+
+for this repository, github gave me this url: `https://anna-murphy.github.io/diy-podcast-feed/`. so, because the xml file is called `example-feed.xml`, my podcast feed is `https://anna-murphy.github.io/diy-podcast-feed/example-feed.xml`.
+
+if you uploaded an image file to your repository, you should be able to access it in the same way (my `cover-image.jpg` is accessible at https://anna-murphy.github.io/diy-podcast-feed/cover-image.jpg).
+
+with these two links in hand, go back to your xml file and set the links to the feed and your cover image appropriately. 
